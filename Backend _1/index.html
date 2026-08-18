@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TechFest Connect</title>
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Internal CSS -->
+    <style>
+        .highlight { color: #a1f56d7d; }
+        h1 { letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+<header>
+    <h2>TechFest Connect</h2>
+    <nav>
+        <a href="#events">Events</a>
+        <a href="#competitions">Competitions</a>
+        <a href="#register">Register</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <!-- INLINE ....... CSS -->
+        <p style="color:#ffd166;">UNIVERSITY TECH FEST 2026</p>
+        <h1>Build and innovate</h1>
+        <p> TechFest brings real production level learning.</p>
+        <a class="btn" href="#register">Register Now</a>
+    </div>
+
+    <div class="hero-box">
+        <h3>TechFest 2026</h3>
+        <p>Coding --- AI --- Hackathons --- Workshops</p>
+    </div>
+</section>
+
+<section>
+    <h2>About TechFest</h2>
+    <p>TechFest Connect is a university technical festival featuring
+        coding competitions, hackathons, AI challenges, gaming,
+        workshops and technical talks.</p>
+</section>
+
+<!-- EVENTS WALA SECTION -->
+<section id="events" class="light">
+    <h2>Upcoming Events</h2>
+    <div class="grid">
+        <article>
+            <h3>Code Sprint</h3>
+            <p>18 Sept - 10 AM - Lab Block A</p>
+        </article>
+        <article>
+            <h3>Tech Hackathon</h3>
+            <p>19 - 20 Sept - 9 AM - Innovation Hall</p>
+        </article>
+        <article>
+            <h3>AI Challenge</h3>
+            <p>20 Sept - 11 AM - Seminar Hall</p>
+        </article>
+        <article>
+            <h3>Gaming Arena</h3>
+            <p>20 Sept - 2 PM - Student Arena</p>
+        </article>
+        <article>
+            <h3>AI Workshop</h3>
+            <p>21 Sept - 11 AM - Workshop Room</p>
+        </article>
+        <article>
+            <h3>Future of Tech</h3>
+            <p>21 Sept - 3 PM - Auditorium</p>
+        </article>
+    </div>
+</section>
+
+
+<!-- Competition waala section  -->
+<section id="competitions">
+    <h2>Featured Competitions</h2>
+
+    <div class="grid">
+
+        <article>
+            <h3>Hackathon</h3>
+            <p>Team based real-world problem solving.</p>
+            <ul>
+                <li> participation</li>
+                <li> guidance</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Code Challenge</h3>
+            <p>Test your programming and problem-solving skills.</p>
+            <ul>
+                <li>Individual participation</li>
+                <li>Leaderboard</li>
+            </ul>
+        </article>
+        <article>
+            <h3>AI Challenge</h3>
+            <p>Create innovative solutions using AI concepts.</p>
+            <ul>
+                <li>AI focused</li>
+                <li>Expert evaluation</li>
+            </ul>
+        </article>
+    </div>
+</section>
+<!-- SPEAKERS WALA SECTION  -->
+<section class="dark">
+    <h2>Speakers & Mentors</h2>
+    <div class="grid">
+        <article>
+            <h3>Dr. Ananya Sharma</h3>
+            <p>AI Researcher & Mentor</p>
+        </article>
+        <article>
+            <h3>Rohan Mehta</h3>
+            <p>Software Engineer</p>
+        </article>
+        <article>
+            <h3>Priya Kapoor</h3>
+            <p>Innovation Consultant</p>
+        </article>
+    </div>
+</section>
+<!-- ANNOUNCEMENTS WALA SECTION -->
+<section>
+    <h2>Important Announcements</h2>
+    <ul>
+        <li>Registration is now open.</li>
+        <li>Hackathon problem statements will be announced soon.</li>
+        <li>Students must carry their university ID.</li>
+    </ul>
+</section>
+
+<section id="register" class="light">
+    <h2>Register for TechFest</h2>
+
+    <form id="registrationForm" onsubmit="return validateForm()">
+
+        <input type="text" id="name" placeholder="Student Name">
+
+        <input type="text" id="sap" placeholder="SAP ID">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="text" id="mobile" placeholder="Mobile Number">
+
+        <select id="semester">
+            <option value="">Select Semester</option>
+            <option>2nd</option>
+            <option>3rd</option>
+            <option>4th</option>
+            <option>5th</option>
+            <option>6th</option>
+            <option>7th</option>
+            <option>8th</option>
+
+        </select>
+
+        <select id="event">
+            <option value="">Select Event</option>
+            <option>Hackathon</option>
+            <option>Code Challenge</option>
+            <option>AI Challenge</option>
+        </select>
+
+        <input type="text" id="skills" placeholder="Skills">
+
+        <button type="submit">Register Now</button>
+
+        <p id="message"></p>
+
+    </form>
+</section>
+
+<!-- Contact -->
+<section>
+    <h2>Contact Us</h2>
+    <p>Email: abcd</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Venue: University Innovation Centre</p>
+</section>
+<footer>
+    <p>TechFest Connect ..... Submitted by: Ananya</p>
+    <p>Backend Development Lab - Experiment 2</p>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+header {
+    background: #111827;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: linear-gradient(135deg, #111827d8, #312e81);
+    color: white;
+    padding: 90px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero h1 span {
+    color: #22d3ee;
+}
+
+.hero p {
+    margin: 15px 0;
+    color: #d1d5db;
+}
+
+.btn {
+    display: inline-block;
+    background: #22d3ee;
+    color: #083344;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.hero-box {
+    padding: 50px 25px;
+    text-align: center;
+    border: 1px solid #ffffff33;
+    border-radius: 20px;
+    background: #ffffff12;
+}
+
+section {
+    padding: 60px 8%;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+.light {
+    background: #f5f7fb;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+article {
+    padding: 25px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+}
+
+article h3 {
+    color: #4f46e5;
+    margin-bottom: 8px;
+}
+
+.dark {
+    background: #111827;
+    color: white;
+}
+
+.dark h2 {
+    color: white;
+}
+
+.dark article {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+select,
+button {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #111827;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 60px 8%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
